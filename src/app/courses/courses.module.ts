@@ -4,10 +4,10 @@ import { NgModule } from '@angular/core';
 import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
 
+import { MatTableModule } from '@angular/material/table';
+
 @NgModule({
-  declarations: [
-    CoursesComponent
-  ],
-  imports: [CommonModule, CoursesRoutingModule],
+  declarations: [CoursesComponent],
+  imports: [CommonModule, CoursesRoutingModule, MatTableModule],
 })
 export class CoursesModule {}
